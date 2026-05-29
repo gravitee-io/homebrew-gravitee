@@ -1,12 +1,21 @@
-# Homebrew Gravitee.io Tap
+# Gravitee Homebrew Tap
 
-## Install
-```
-$ brew tap gravitee-io/gravitee
-$ brew install gravitee
+Official Homebrew tap for [Gravitee](https://www.gravitee.io) tools.
+
+## Usage
+
+```bash
+brew tap gravitee-io/gravitee
+brew install <formula>
 ```
 
-## Run Gravitee.io
+Or install directly without tapping first:
+
+```bash
+brew install gravitee-io/gravitee/<formula>
 ```
-$ gravitee
-```
+
+## Maintenance
+
+Formulas in this tap are published automatically by their respective release
+pipelines. Do not edit them by hand.

@@ -5,21 +5,21 @@
 class Gctl < Formula
   desc "Gravitee CLI for APIM & AM"
   homepage "https://github.com/gravitee-io/gravitee-cli"
-  version "0.1.0-rc3"
+  version "0.1.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/gravitee-io/gravitee-cli/releases/download/v0.1.0-rc3/gctl_0.1.0-rc3_darwin_amd64.tar.gz"
-      sha256 "5256edd767ff1e1039e57feb96af5fd3e70969a02fd99cff32920be3713cd35b"
+      url "https://github.com/gravitee-io/gravitee-cli/releases/download/v0.1.0/gctl_0.1.0_darwin_amd64.tar.gz"
+      sha256 "bc2d24195ffc7174de4a536caed93aef632cddd9f84a2764a95167e6d7ba1080"
 
       define_method(:install) do
         bin.install "gctl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/gravitee-io/gravitee-cli/releases/download/v0.1.0-rc3/gctl_0.1.0-rc3_darwin_arm64.tar.gz"
-      sha256 "7b598458a0d121625b1a8d4698477d8091191a9218d4ba145a9dfa0df1c99900"
+      url "https://github.com/gravitee-io/gravitee-cli/releases/download/v0.1.0/gctl_0.1.0_darwin_arm64.tar.gz"
+      sha256 "74fd4d2bb7df26b2291e0740d30c1099ef24b792599526670e53abea72a4b16b"
 
       define_method(:install) do
         bin.install "gctl"
@@ -29,15 +29,15 @@ class Gctl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gravitee-io/gravitee-cli/releases/download/v0.1.0-rc3/gctl_0.1.0-rc3_linux_amd64.tar.gz"
-      sha256 "6cb482d28d76bda6fdf57c8630132f4085f26af91ce6add2655539e1bfb92795"
+      url "https://github.com/gravitee-io/gravitee-cli/releases/download/v0.1.0/gctl_0.1.0_linux_amd64.tar.gz"
+      sha256 "6454bedda3d4c54bede23fbd1f2329f094cf430b5a7190e97e5822d09dd7103d"
       define_method(:install) do
         bin.install "gctl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gravitee-io/gravitee-cli/releases/download/v0.1.0-rc3/gctl_0.1.0-rc3_linux_arm64.tar.gz"
-      sha256 "9f634489cb6072ba026ce4b2d8acaa251a8265812ce4a303b46941c4f7cf2c4d"
+      url "https://github.com/gravitee-io/gravitee-cli/releases/download/v0.1.0/gctl_0.1.0_linux_arm64.tar.gz"
+      sha256 "f1d2e8370ca79071c4a328b307310ebb7f4873b9f07ad9615c3fd628f94c51f3"
       define_method(:install) do
         bin.install "gctl"
       end

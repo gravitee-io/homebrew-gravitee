@@ -5,21 +5,21 @@
 class GctlRo < Formula
   desc "Gravitee CLI for APIM & AM read-only"
   homepage "https://github.com/gravitee-io/gravitee-cli"
-  version "0.1.0-rc3"
+  version "0.1.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/gravitee-io/gravitee-cli/releases/download/v0.1.0-rc3/gctl_readonly_0.1.0-rc3_darwin_amd64.tar.gz"
-      sha256 "ecedf41844b0de0d893c055ea0203e1b20b7672c180d1098aafb8171f22a6396"
+      url "https://github.com/gravitee-io/gravitee-cli/releases/download/v0.1.0/gctl_readonly_0.1.0_darwin_amd64.tar.gz"
+      sha256 "ebed6c9cd5c2d743c3b164b5ad5ce8a40d638d6d3a60ce896dbb8a5f7c111d50"
 
       define_method(:install) do
         bin.install "gctl-ro"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/gravitee-io/gravitee-cli/releases/download/v0.1.0-rc3/gctl_readonly_0.1.0-rc3_darwin_arm64.tar.gz"
-      sha256 "d6c5d3873f809d93fc86dfad6f59d5f170f87f597166cd7bc434f9f87fcd2c57"
+      url "https://github.com/gravitee-io/gravitee-cli/releases/download/v0.1.0/gctl_readonly_0.1.0_darwin_arm64.tar.gz"
+      sha256 "e7f2ac7f5865e50bee0520780fef447c6db08dc41ecc9a415069180efea71b45"
 
       define_method(:install) do
         bin.install "gctl-ro"
@@ -29,15 +29,15 @@ class GctlRo < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gravitee-io/gravitee-cli/releases/download/v0.1.0-rc3/gctl_readonly_0.1.0-rc3_linux_amd64.tar.gz"
-      sha256 "bdeeef09938091e02353a09cc50c1bb01b1a24cf8aaa87f5c68c8b3af1718aac"
+      url "https://github.com/gravitee-io/gravitee-cli/releases/download/v0.1.0/gctl_readonly_0.1.0_linux_amd64.tar.gz"
+      sha256 "76b57e47fc26932e520b9c3d7633dbfd04fbc6c8dd78fa78b5dab63b3a021dcb"
       define_method(:install) do
         bin.install "gctl-ro"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gravitee-io/gravitee-cli/releases/download/v0.1.0-rc3/gctl_readonly_0.1.0-rc3_linux_arm64.tar.gz"
-      sha256 "807dd1da70fb967b1711da2a082d660ce482dcdfd6fc96f29f6ef1d483861825"
+      url "https://github.com/gravitee-io/gravitee-cli/releases/download/v0.1.0/gctl_readonly_0.1.0_linux_arm64.tar.gz"
+      sha256 "9919805e866de9f02a620ce0d0faca293b97cdb1a357cfd9bac42ef0949265ae"
       define_method(:install) do
         bin.install "gctl-ro"
       end
